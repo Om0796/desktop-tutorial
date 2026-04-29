@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/Anajsetu_pic.png" alt="AnajSetu - Bridge to Food, Hope to Lives" width="80%"/>
+  <img src="Anajsetu_pic.png" alt="AnajSetu - Bridge to Food, Hope to Lives" width="80%"/>
 </p>
 
 <div align="center">
