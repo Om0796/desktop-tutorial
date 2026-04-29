@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Anajsetu_pic.png" alt="AnajSetu - Bridge to Food, Hope to Lives" width="80%"/>
+  <img src="assets/Anajsetu_pic.png" alt="AnajSetu - Bridge to Food, Hope to Lives" width="80%"/>
 </p>
 
 <div align="center">
@@ -90,8 +90,9 @@
 
 ## 📁 Project Structure <a name="project-structure"></a>
 
-```
-anajsetu/
+\`
+\`
+\`anajsetu/
 │
 ├── 📂 backend/                        # Spring Boot Project
 │   └── src/
@@ -120,7 +121,9 @@ anajsetu/
 │
 └── 📂 assets/
     └── Anajsetu_pic.png               # Project Banner
-```
+\`
+\`
+\`
 
 ---
 
@@ -141,24 +144,30 @@ Make sure the following are installed on your machine:
 ### 🖥️ Backend Setup <a name="backend-setup"></a>
 
 **1. Clone the repository**
-```bash
+\`
+\`
+\`bash
 git clone https://github.com/YOUR_USERNAME/anajsetu.git
 cd anajsetu/backend
-```
+\`bash
 
 **2. Create MySQL database**
-```sql
+\`
+\`
+\`sql
 CREATE DATABASE anajsetu;
-```
+\`sql
 
-**3. Configure `application.properties`**
+**3. Configure \`application.properties\`**
 
-Create/edit `src/main/resources/application.properties` — see [Environment Variables](#environment-variables).
+Create/edit \`src/main/resources/application.properties\` — see [Environment Variables](#environment-variables).
 
 **4. Run the backend**
-```bash
+\`
+\`
+\`bash
 ./mvnw spring-boot:run
-```
+\`bash
 
 ✅ Backend runs at: **http://localhost:8080**
 
@@ -167,21 +176,27 @@ Create/edit `src/main/resources/application.properties` — see [Environment Var
 ### 🎨 Frontend Setup <a name="frontend-setup"></a>
 
 **1. Navigate to frontend folder**
-```bash
+\`
+\`
+\`bash
 cd anajsetu/frontend
-```
+\`bash
 
 **2. Install dependencies**
-```bash
+\`
+\`
+\`bash
 npm install
-```
+\`bash
 
-**3. Create `.env` file** — see [Environment Variables](#environment-variables).
+**3. Create \.env file** — see [Environment Variables](#environment-variables).
 
 **4. Start the frontend**
-```bash
+\`
+\`
+\`bash
 npm start
-```
+\`bash
 
 ✅ Frontend runs at: **http://localhost:3000**
 
@@ -189,9 +204,11 @@ npm start
 
 ## 🔐 Environment Variables <a name="environment-variables"></a>
 
-### Backend — `src/main/resources/application.properties`
+### Backend — \`src/main/resources/application.properties\`
 
-```properties
+\`
+\`
+\`properties
 # Database
 spring.datasource.url=jdbc:mysql://localhost:3306/anajsetu
 spring.datasource.username=YOUR_MYSQL_USERNAME
@@ -209,16 +226,22 @@ razorpay.key.secret=YOUR_RAZORPAY_KEY_SECRET
 
 # Server
 server.port=8080
-```
+\`
+\`
+\`
 
-### Frontend — `.env` (in frontend root)
+### Frontend — \.env (in frontend root)
 
-```env
+\`
+\`
+\`env
 REACT_APP_API_BASE_URL=http://localhost:8080/api
 REACT_APP_RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
-```
+\`
+\`
+\`
 
-> ⚠️ **Never commit real credentials.** Add `application.properties` and `.env` to your `.gitignore`.
+> ⚠️ **Never commit real credentials.** Add \`application.properties\` and \.env to your \.gitignore.
 
 ---
 
@@ -226,14 +249,14 @@ REACT_APP_RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | `/api/auth/register` | Register a new user |
-| POST | `/api/auth/login` | Login & receive JWT token |
-| GET | `/api/donations` | Fetch all food donations |
-| POST | `/api/donations` | Create a new donation |
-| PUT | `/api/donations/{id}` | Update a donation |
-| DELETE | `/api/donations/{id}` | Delete a donation |
-| POST | `/api/payment/create-order` | Create Razorpay order |
-| POST | `/api/payment/verify` | Verify Razorpay payment |
+| POST | \`/api/auth/register\` | Register a new user |
+| POST | \`/api/auth/login\` | Login & receive JWT token |
+| GET | \`/api/donations\` | Fetch all food donations |
+| POST | \`/api/donations\` | Create a new donation |
+| PUT | \`/api/donations/{id}\` | Update a donation |
+| DELETE | \`/api/donations/{id}\` | Delete a donation |
+| POST | \`/api/payment/create-order\` | Create Razorpay order |
+| POST | \`/api/payment/verify\` | Verify Razorpay payment |
 
 > Full API documentation coming soon (Postman / Swagger).
 
